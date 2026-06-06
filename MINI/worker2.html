@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Rated Carpenters</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff; /* Light blue background */
+            color: #003366; /* Dark blue text */
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        .header {
+            background-color: #003366; /* Dark blue */
+            color: #ffd700; /* Yellow */
+            padding: 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        .card {
+            background-color: #ffffff; /* White background */
+            border: 2px solid #003366; /* Dark blue border */
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 250px;
+            padding: 20px;
+            text-align: center;
+            color: #003366; /* Dark blue text */
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .card img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .card .title {
+            color: #ffd700; /* Yellow for title */
+            font-size: 20px;
+            margin: 10px 0;
+        }
+
+        .card .contact {
+            font-size: 18px;
+            color: #003366; /* Dark blue */
+            font-weight: normal;
+            margin-bottom: 8px;
+        }
+
+        .card .details {
+            color: #003366; /* Dark blue text */
+            font-weight: normal;
+            font-size: 14px;
+        }
+
+        .star {
+            color: #ffd700; /* Yellow for star */
+            margin-right: 5px;
+        }
+
+        /* Media query for responsive layout */
+        @media (min-width: 768px) {
+            .card {
+                flex: 1 1 30%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">Top Rated Carpenters</div>
+
+    <div class="container">
+        <div class="card">
+            <img src="carpenter1.jpg" alt="Rajesh Gandhi">
+            <div class="title">Rajesh Gandhi</div>
+            <div class="contact">9934482239</div>
+            <div class="details">
+                <span class="star">★</span> 4.6 • 30-35 mins<br>
+                Bakery, Beverages, Chaat, Desserts<br>
+                RT Nagar
+            </div>
+        </div>
+        
+        <div class="card">
+            <img src="carpenter2.jpg" alt="Samosa Party">
+            <div class="title">Samosa Party</div>
+            <div class="details">
+                60% OFF Upto ₹120<br>
+                <span class="star">★</span> 4.6 • 35-40 mins<br>
+                Fast Food, Snacks, Beverages<br>
+                Brigade Road
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="carpenter3.jpg" alt="Asha Sweet Center">
+            <div class="title">Asha Sweet Center - Since 1951</div>
+            <div class="details">
+                <span class="star">★</span> 4.6 • 30-35 mins<br>
+                Sweets, Snacks, Fast Food, Bakery<br>
+                Basavanagudi
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

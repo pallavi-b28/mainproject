@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css"> <!-- You can link your custom CSS here -->
+</head>
+<body>
+    <div class="dashboard-container">
+        <h1>Welcome to your Dashboard!</h1>
+        
+        <!-- Display user info or welcome message -->
+        <p>Welcome, <span id="username-display"></span>!</p>
+
+        <!-- Add links to other sections, for example: -->
+        <ul>
+            <li><a href="profile.html">View Profile</a></li>
+            <li><a href="orders.html">View Orders</a></li>
+            <li><a href="logout.php">Logout</a></li>
+        </ul>
+    </div>
+
+    <script>
+        // Display the logged-in user's username dynamically (optional)
+        document.getElementById("username-display").textContent = localStorage.getItem("username") || "Guest";
+    </script>
+</body>
+</html>

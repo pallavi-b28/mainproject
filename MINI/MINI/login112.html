@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Section</title>
+  <style>
+    /* Reset some default browser styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f3f3f3;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .login-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+    }
+
+    .login-box {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      text-align: center;
+      max-width: 400px;
+      width: 100%;
+      border: 1px solid #dcdcdc;
+    }
+
+    .login-box h2 {
+      margin-bottom: 10px;
+      font-size: 1.5rem;
+    }
+
+    .login-box p {
+      font-size: 1rem;
+      margin-bottom: 20px;
+      color: #6b6b6b;
+    }
+
+    button {
+      background-color: #6a33dc;
+      color: white;
+      border: none;
+      padding: 15px 0;
+      width: 100%;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #5b29b8;
+    }
+
+    @media (max-width: 768px) {
+      .login-box {
+        padding: 15px;
+      }
+
+      button {
+        padding: 12px 0;
+        font-size: 0.9rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .login-box h2 {
+        font-size: 1.2rem;
+      }
+
+      button {
+        padding: 10px 0;
+        font-size: 0.85rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <div class="login-box">
+      <h2>Account</h2>
+      <p>To book the service, please login or sign up</p>
+      <button id="loginButton">Login</button>
+    </div>
+  </div>
+
+  <script>
+    document.getElementBy

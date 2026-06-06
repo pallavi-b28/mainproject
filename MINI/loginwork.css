@@ -1,0 +1,75 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(to bottom, #e3f2fd, #fff9c4); /* Light blue to soft yellow */
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    text-align: center;
+}
+
+.logo {
+    font-size: 3em;
+    color: #0d47a1; /* Dark blue */
+    margin-bottom: 10px;
+}
+
+.logo .highlight {
+    color: #fbc02d; /* Yellow color for 'BEE' */
+}
+
+h2 {
+    color: #0d47a1;
+    margin-bottom: 20px;
+}
+
+button {
+    display: block;
+    width: 250px;
+    padding: 15px;
+    margin: 10px auto;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+button.customer {
+    background-color: #64b5f6;
+    color: #fff;
+}
+
+button.worker {
+    background-color: #fbc02d;
+    color: #000;
+}
+
+button.customer:hover {
+    background-color: #42a5f5;
+}
+
+button.worker:hover {
+    background-color: #fdd835;
+}
+
+a {
+    display: block;
+    color: #1976d2;
+    text-decoration: none;
+    margin-top: 15px;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #0d47a1;
+}
